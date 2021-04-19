@@ -10,7 +10,7 @@ body{
 }
 h1{
     font-size: 3rem;
-    margin-top: 10%;
+    margin-top: 5%;
     color: rgb(228, 228, 228); 
        
 }
@@ -41,4 +41,8 @@ button{
     font-family: 'Dancing Script', cursive;
     font-size: 25px;
     border-radius: 40px;
+}
+
+button:hover {
+    cursor: pointer;
 }

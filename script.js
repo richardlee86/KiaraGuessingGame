@@ -21,7 +21,7 @@ let count = 1;
     } else if (parseInt(userGuess.value) === secretNumber) {
         message.innerHTML = `You got it! It took you ${count} guesses`;
     } else {
-        console.log("You are a dummy");
+        alert("Please Enter a Valid Number");
     }
   });
 
