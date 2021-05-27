@@ -8,6 +8,7 @@ h2 {
 body{
     background-color: #cc89f5;
 }
+main {height: 100vh;}
 h1{
     font-size: 3rem;
     margin-top: 5%;
@@ -19,22 +20,34 @@ h4{
     font-size: 2rem;
 }
 section{
-    background-color: rgb(228, 228, 228);
-    max-width: 50rem;
-    min-width: 4rem;
-    margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 2%;
-    padding-top: 1.5rem;
-    padding-bottom: 2.1rem;
+    display: flex;    
+    justify-content: center; 
+    height: 50%;       
+    width: 100%;   
+    margin-top: 2%;    
+    color: #cc89f5;      
+}
+
+form {
+    width: 30%;
+    height: 70%;
+    margin-top: 0;
+    padding-top: 0;
     border: pink solid;
     border-radius: 40px;
-    color: #cc89f5;
+    background-color: rgb(228, 228, 228);
     
 }
+
+
 input{
    width: 150px; 
 }
+
+.button-div {
+    margin-top: 3%;
+}
+
 button{
     margin-top: 40px;
     width: 100px;    
@@ -45,4 +58,44 @@ button{
 
 button:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width:900px) {
+    section{
+        display: flex;    
+        justify-content: center; 
+        height: 50%;       
+        width: 100%;   
+        margin-top: 2%;    
+        color: #cc89f5;      
+    }
+
+    form {
+        width: 100%;
+        height: 70vh;
+        margin-top: 0;
+        padding-top: 0;
+        border: pink solid;
+        border-radius: 40px;
+        background-color: rgb(228, 228, 228);        
+    }
+
+    input{
+        width: 60%; 
+        height: 7%;
+     }
+
+     .button-div {
+         display: flex;
+         justify-content: center;
+         width: 100%;
+     }
+
+     button{
+        position: relative;               
+        width: 100px;    
+        font-family: 'Dancing Script', cursive;
+        font-size: 25px;
+        border-radius: 40px;
+    }
 }
